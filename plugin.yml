@@ -1,0 +1,8 @@
+main: thirtyvirus.sbbp.ShulkerBoxBackPacks
+version: 1.0.3
+name: ShulkerBoxBackPacks
+api-version: 1.13
+
+commands:
+  sbbpReload:
+    description: Reloads the ShulkerBox BackPacks plugin config
