@@ -22,7 +22,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.google.common.io.ByteStreams;
 
-import thirtyvirus.multiversion.XMaterial;
+import thirtyvirus.sbbp.multiversion.XMaterial;
 import thirtyvirus.sbbp.commands.reload;
 import thirtyvirus.sbbp.events.UseItem;
 import thirtyvirus.sbbp.events.inventory;
