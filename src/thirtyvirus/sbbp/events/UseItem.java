@@ -19,7 +19,7 @@ public class UseItem implements Listener {
     @EventHandler(priority=EventPriority.HIGH)
     public void onPlayerUse(PlayerInteractEvent event){
 
-        //Shulker Box Right Click
+        // Shulker Box Right Click
         if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
             Player player = event.getPlayer();
             if (!player.hasPermission("ShulkerBoxBackPacks.use")) return;
@@ -27,7 +27,7 @@ public class UseItem implements Listener {
             ItemStack item = player.getInventory().getItemInMainHand();
             if (item.getType() == Material.AIR) return;
 
-            //test for Shulker Boxes that are renamed
+            // test for Shulker Boxes that are renamed
             if (!ShulkerBoxBackPacks.useNamedBoxes || !ShulkerBoxBackPacks.useFormattedNamedBoxes){
                 ItemStack i = new ItemStack(item.getType());
                 String defaultName = i.getItemMeta().getDisplayName();
@@ -39,7 +39,7 @@ public class UseItem implements Listener {
 
             if (ShulkerBoxBackPacks.supportedMaterials.contains(item.getType()) && player.isSneaking()) {
                 event.setCancelled(true);
-                player.playSound(player.getLocation(), Sound.BLOCK_SHULKER_BOX_OPEN, 1, 1);
+                player.playSound(player.getLocation(), Sound.ENTITY_SHULKER_OPEN, 1, 1);
                 player.openInventory(MenuLoader.createShulkerBoxInventory(player, player.getInventory().getItemInMainHand()));
             }
 

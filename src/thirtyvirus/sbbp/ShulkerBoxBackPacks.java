@@ -22,6 +22,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.google.common.io.ByteStreams;
 
+import thirtyvirus.multiversion.XMaterial;
 import thirtyvirus.sbbp.commands.reload;
 import thirtyvirus.sbbp.events.UseItem;
 import thirtyvirus.sbbp.events.inventory;
@@ -40,9 +41,9 @@ public class ShulkerBoxBackPacks extends JavaPlugin  {
     private Permission nest = new Permission("ShulkerBoxBackPacks.nesting");
     private Permission reload = new Permission("ShulkerBoxBackPacks.reload");
 
-    public static final List<Material> supportedMaterials = Arrays.asList(Material.SHULKER_BOX, Material.BLACK_SHULKER_BOX,
+    public static final List<Material> supportedMaterials = Arrays.asList(XMaterial.SHULKER_BOX.parseMaterial(), Material.BLACK_SHULKER_BOX,
             Material.BLUE_SHULKER_BOX, Material.BROWN_SHULKER_BOX, Material.CYAN_SHULKER_BOX, Material.GRAY_SHULKER_BOX,
-            Material.GREEN_SHULKER_BOX, Material.LIGHT_BLUE_SHULKER_BOX, Material.LIGHT_GRAY_SHULKER_BOX, Material.LIME_SHULKER_BOX,
+            Material.GREEN_SHULKER_BOX, Material.LIGHT_BLUE_SHULKER_BOX, XMaterial.LIGHT_GRAY_SHULKER_BOX.parseMaterial(), Material.LIME_SHULKER_BOX,
             Material.MAGENTA_SHULKER_BOX, Material.ORANGE_SHULKER_BOX, Material.PINK_SHULKER_BOX, Material.PURPLE_SHULKER_BOX,
             Material.RED_SHULKER_BOX, Material.WHITE_SHULKER_BOX, Material.YELLOW_SHULKER_BOX);
 
