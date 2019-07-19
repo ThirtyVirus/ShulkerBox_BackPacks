@@ -1,9 +1,8 @@
-package thirtyvirus.multiversion;
+package thirtyvirus.sbbp.multiversion;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package thirtyvirus.multiversion;
+package thirtyvirus.sbbp.multiversion;
 /**
  * The MIT License (MIT)
  * <p>

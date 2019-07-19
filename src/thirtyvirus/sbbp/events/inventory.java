@@ -11,7 +11,7 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BlockStateMeta;
 
-import thirtyvirus.multiversion.Version;
+import thirtyvirus.sbbp.multiversion.Version;
 import thirtyvirus.sbbp.ShulkerBoxBackPacks;
 
 public class inventory implements Listener {

@@ -1,4 +1,4 @@
-package thirtyvirus.multiversion;
+package thirtyvirus.sbbp.multiversion;
 
 import org.bukkit.Bukkit;
 
