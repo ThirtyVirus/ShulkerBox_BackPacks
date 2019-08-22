@@ -14,12 +14,12 @@ import org.bukkit.inventory.meta.BlockStateMeta;
 import thirtyvirus.sbbp.multiversion.Version;
 import thirtyvirus.sbbp.ShulkerBoxBackPacks;
 
-public class inventory implements Listener {
+public class Inventory implements Listener {
 
     @EventHandler(priority=EventPriority.HIGH)
     public void onInventoryClick(InventoryClickEvent event){
 
-        // ensure the inventory is a Shulker Box Backpack inventory
+        // ensure the Inventory is a Shulker Box Backpack Inventory
         if (Version.getVersion().isBiggerThan(Version.v1_13)) {
             if (!event.getView().getTitle().contains("Shulker Box - In Hand")) return;
         }
@@ -35,27 +35,30 @@ public class inventory implements Listener {
 
         ItemStack shulkerBox = event.getWhoClicked().getInventory().getItemInMainHand();
 
-        //Prevent putting box inside itself (tests this by testing equal-ness for shulker boxes in hotbar
+        // prevent duplication exploits on laggy servers by closing Inventory if no shulker box in hand on Inventory click
+        if (shulkerBox == null) { event.setCancelled(true); event.getWhoClicked().closeInventory(); }
+
+        // prevent putting box inside itself (tests this by testing equal-ness for shulker boxes in hotbar
         if (event.getCurrentItem().equals(shulkerBox) && event.getRawSlot() >= 54) { event.setCancelled(true); return; }
 
-        //Prevent nesting too far
+        // prevent nesting too far
         if (ShulkerBoxBackPacks.supportedMaterials.contains(event.getCurrentItem().getType())){
             if (event.getRawSlot() > 34){
                 if (ShulkerBoxBackPacks.nesting && ShulkerBoxBackPacks.nestingDepth > -1 && ShulkerBoxBackPacks.getNestingDepth(event.getCurrentItem(), 1) >= ShulkerBoxBackPacks.nestingDepth) { event.setCancelled(true); return; }
             }
         }
 
-        //Prevent swapping inventory slot with shulker box (fixes dupe glitch)
+        // prevent swapping Inventory slot with shulker box (fixes dupe glitch)
         if (event.getAction().name().contains("HOTBAR")) { event.setCancelled(true); return; }
 
         BlockStateMeta im = (BlockStateMeta)shulkerBox.getItemMeta();
         ShulkerBox shulker = (ShulkerBox) im.getBlockState();
 
-        //set all contents minus most recent item
+        // set all contents minus most recent item
         shulker.getInventory().setContents(event.getInventory().getContents());
 
-        //set most recent item
-        //if (event.getAction() == InventoryAction.DROP_ALL_SLOT)
+        // set most recent item
+        // if (event.getAction() == InventoryAction.DROP_ALL_SLOT)
         //shulker.getInventory().setItem(event.getSlot(), event.getCurrentItem());
 
         im.setBlockState(shulker);
@@ -64,11 +67,11 @@ public class inventory implements Listener {
     }
 
 
-    //play shulker box close sound on inventory close
+    //play shulker box close sound on Inventory close
     @EventHandler
     public void onCloseInventory(InventoryCloseEvent event){
 
-        // ensure the inventory is a Shulker Box Backpack inventory
+        // ensure the Inventory is a Shulker Box Backpack Inventory
         if (Version.getVersion().isBiggerThan(Version.v1_13)) {
             if (!event.getView().getTitle().contains("Shulker Box - In Hand")) return;
         }

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc2cba5-679a-4f3f-9d76-1190a595b7e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/MenuLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/ShulkerBoxBackPacks.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/commands/reload.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/events/UseItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/events/inventory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/multiversion/API.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/multiversion/Sound.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/multiversion/Version$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/multiversion/Version.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/multiversion/XMaterial.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/META-INF/MANIFEST.MF" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java" afterPath="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/ShulkerBoxBackPacks.class" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/ShulkerBoxBackPacks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/events/inventory.class" afterPath="$PROJECT_DIR$/out/production/ShulkerBox_BackPacks/thirtyvirus/sbbp/events/inventory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java" afterPath="$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,21 +23,40 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShulkerBoxBackPacks.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShulkerBoxBackPacks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="43" column="140" lean-forward="false" selection-start-line="43" selection-start-column="140" selection-end-line="43" selection-end-column="140" />
+            <state relative-caret-position="396">
+              <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
                 <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
                 <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-                <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-                <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
                 <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
                 <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,10 +88,11 @@
         <option value="$PROJECT_DIR$/src/BackPacks/commands/reload.java" />
         <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/MainClass.java" />
         <option value="$PROJECT_DIR$/config.yml" />
-        <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java" />
         <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/UseItem.java" />
         <option value="$PROJECT_DIR$/src/thirtyvirus/multiversion/API.java" />
+        <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java" />
         <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java" />
+        <option value="$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
       </list>
     </option>
@@ -107,7 +121,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,11 +189,31 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbbp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShulkerBox_BackPacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShulkerBox_BackPacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563504097319</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Verifying that git is backing up every file">
+      <created>1566489607536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566489607536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -449,8 +492,9 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14497273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,7 +506,8 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21122369" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29968202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -473,9 +518,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14497273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -485,7 +528,8 @@
     <MESSAGE value="1.11 - 1.14 compatability. Fixed typo in plugin name" />
     <MESSAGE value="Changed location of multiversion package" />
     <MESSAGE value="asd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+    <MESSAGE value="Verifying that git is backing up every file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verifying that git is backing up every file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,11 +546,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -519,11 +560,22 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
+            <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
+            <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
+            <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -536,11 +588,8 @@
           <caret line="47" column="95" lean-forward="false" selection-start-line="47" selection-start-column="95" selection-end-line="47" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -560,11 +609,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -577,11 +623,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -594,11 +637,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -611,11 +651,8 @@
           <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -635,11 +672,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -652,11 +686,8 @@
           <caret line="89" column="26" lean-forward="false" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -673,7 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java">
+    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -708,11 +739,8 @@
           <caret line="89" column="26" lean-forward="false" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -729,7 +757,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java">
+    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -764,11 +792,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -781,11 +806,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -798,11 +820,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -815,11 +834,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -832,11 +848,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -849,11 +862,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
@@ -877,16 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,27 +922,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/ShulkerBoxBackPacks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="140" lean-forward="false" selection-start-line="43" selection-start-column="140" selection-end-line="43" selection-end-column="140" />
+        <state relative-caret-position="396">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onEnable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#onDisable#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#registerEvents#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#registerPermissions#0;class#ShulkerBoxBackPacks#0" expanded="false" />
-            <element signature="method#loadConfiguration#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#loadResource#0;class#ShulkerBoxBackPacks#0" expanded="false" />
             <element signature="method#getNestingDepth#0;class#ShulkerBoxBackPacks#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thirtyvirus/sbbp/events/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

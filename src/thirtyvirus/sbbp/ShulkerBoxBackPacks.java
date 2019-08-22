@@ -14,7 +14,6 @@ import org.bukkit.block.ShulkerBox;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BlockStateMeta;
-import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
@@ -25,7 +24,7 @@ import com.google.common.io.ByteStreams;
 import thirtyvirus.sbbp.multiversion.XMaterial;
 import thirtyvirus.sbbp.commands.reload;
 import thirtyvirus.sbbp.events.UseItem;
-import thirtyvirus.sbbp.events.inventory;
+import thirtyvirus.sbbp.events.Inventory;
 
 public class ShulkerBoxBackPacks extends JavaPlugin  {
 
@@ -35,11 +34,6 @@ public class ShulkerBoxBackPacks extends JavaPlugin  {
 
     private FileConfiguration config;
     private Logger logger = getLogger();
-
-    //Permissions
-    private Permission use = new Permission("ShulkerBoxBackPacks.use");
-    private Permission nest = new Permission("ShulkerBoxBackPacks.nesting");
-    private Permission reload = new Permission("ShulkerBoxBackPacks.reload");
 
     public static final List<Material> supportedMaterials = Arrays.asList(XMaterial.SHULKER_BOX.parseMaterial(), Material.BLACK_SHULKER_BOX,
             Material.BLUE_SHULKER_BOX, Material.BROWN_SHULKER_BOX, Material.CYAN_SHULKER_BOX, Material.GRAY_SHULKER_BOX,
@@ -66,7 +60,6 @@ public class ShulkerBoxBackPacks extends JavaPlugin  {
 
         getCommand("sbbpReload").setExecutor(new reload(this));;
         registerEvents();
-        registerPermissions();
 
         //posts confirmation in chat
         logger.info(descFile.getName() + " V: " + descFile.getVersion() + " has been enabled");
@@ -79,21 +72,13 @@ public class ShulkerBoxBackPacks extends JavaPlugin  {
 
     public void registerEvents(){
         pm.registerEvents(new UseItem(), this);
-        pm.registerEvents(new inventory(), this);
-    }
-
-    public void registerPermissions(){
-        pm.addPermission(use);
-        pm.addPermission(nest);
-        pm.addPermission(reload);
+        pm.registerEvents(new Inventory(), this);
     }
 
     //load config settings
     public void loadConfiguration(){
         config = this.getConfig();
 
-        use = new Permission(config.getString("permission"));
-        nest = new Permission(config.getString("nesting-permission"));
         nesting = config.getBoolean("nesting");
         nestingDepth = config.getInt("nesting-depth");
         useNamedBoxes = config.getBoolean("use-renamed-boxes");
