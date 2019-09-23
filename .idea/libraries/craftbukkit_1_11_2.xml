@@ -1,11 +1,17 @@
 <component name="libraryTable">
   <library name="craftbukkit-1.11.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../imports/craftbukkit-suite/craftbukkit-1.11.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.11.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.12.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.14.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.13.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../imports/craftbukkit-suite/craftbukkit-1.11.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.11.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.12.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.14.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/craftbukkit-suite/craftbukkit-suite/craftbukkit-1.13.2.jar!/" />
     </SOURCES>
   </library>
 </component>
