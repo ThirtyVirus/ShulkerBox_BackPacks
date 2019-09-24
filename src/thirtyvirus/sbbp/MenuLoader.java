@@ -18,14 +18,13 @@ public class MenuLoader {
             BlockStateMeta im = (BlockStateMeta)shulkerBoxItemStack.getItemMeta();
             if(im.getBlockState() instanceof ShulkerBox) {
                 ShulkerBox shulker = (ShulkerBox) im.getBlockState();
-                Inventory inv = Bukkit.createInventory(null, 27, "Holding: " + shulkerBoxItemStack.getItemMeta().getDisplayName());
+
+                String name = shulkerBoxItemStack.getItemMeta().getDisplayName();
+                if (name.equals("")) name = shulkerBoxItemStack.getType().name();
+
+                Inventory inv = Bukkit.createInventory(null, 27, "Holding: " + name);
                 inv.setContents(shulker.getInventory().getContents());
                 player.openInventory(inv);
-
-                // set the lore of the item to "Opened!" to prevent duplication exploits down the line
-                ItemMeta meta = shulkerBoxItemStack.getItemMeta();
-                meta.setLore(Arrays.asList("Opened!"));
-                shulkerBoxItemStack.setItemMeta(meta);
 
                 return inv;
             }

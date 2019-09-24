@@ -39,9 +39,7 @@ public class Inventory implements Listener {
         ItemStack shulkerBox = event.getWhoClicked().getInventory().getItemInMainHand();
 
         // prevent duplication exploits on laggy servers by closing Inventory if no shulker box in hand on Inventory click
-        if (shulkerBox == null || !shulkerBox.hasItemMeta() || !shulkerBox.getItemMeta().hasLore()) { event.setCancelled(true); event.getWhoClicked().closeInventory(); }
-        // prevent duplication exploits on laggy servers by swapping different shulker boxes in hand when waiting for inventory to open
-        if (!shulkerBox.getItemMeta().getLore().get(0).equals("Opened!")) { event.setCancelled(true); event.getWhoClicked().closeInventory(); }
+        if (shulkerBox == null) { event.setCancelled(true); event.getWhoClicked().closeInventory(); }
 
         // prevent putting box inside itself (tests this by testing equal-ness for shulker boxes in hotbar
         if (event.getCurrentItem().equals(shulkerBox) && event.getRawSlot() >= 54) { event.setCancelled(true); return; }
@@ -90,11 +88,6 @@ public class Inventory implements Listener {
 
         BlockStateMeta im = (BlockStateMeta)shulkerBox.getItemMeta();
         ShulkerBox shulker = (ShulkerBox) im.getBlockState();
-
-        // set the lore of the item to nothing as the box is no longer open
-        ItemMeta meta = shulkerBox.getItemMeta();
-        meta.setLore(Arrays.asList());
-        shulkerBox.setItemMeta(meta);
 
         //set all contents minus most recent item
         shulker.getInventory().setContents(event.getInventory().getContents());
