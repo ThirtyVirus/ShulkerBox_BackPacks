@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="ShukerBox_BackPacks:jar">
-    <output-path>$PROJECT_DIR$/../../Test Server/plugins</output-path>
+    <output-path>$USER_HOME$/OneDrive/Documents/Programming/Spigot/Test Server/plugins</output-path>
     <root id="archive" name="ShukerBoxBackPacks.jar">
       <element id="module-output" name="ShulkerBox_BackPacks" />
       <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
