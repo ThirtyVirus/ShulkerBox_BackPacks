@@ -19,8 +19,12 @@ public class MenuLoader {
             if(im.getBlockState() instanceof ShulkerBox) {
                 ShulkerBox shulker = (ShulkerBox) im.getBlockState();
 
-                String name = shulkerBoxItemStack.getItemMeta().getDisplayName();
-                if (name.equals("")) name = shulkerBoxItemStack.getType().name();
+                String name;
+                if (shulkerBoxItemStack.getItemMeta().hasDisplayName()) {
+                    name = shulkerBoxItemStack.getItemMeta().getDisplayName();
+                } else {
+                    name = shulkerBoxItemStack.getType().name();
+                }
 
                 Inventory inv = Bukkit.createInventory(null, 27, "Holding: " + name);
                 inv.setContents(shulker.getInventory().getContents());
